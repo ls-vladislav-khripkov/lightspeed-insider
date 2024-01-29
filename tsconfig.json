@@ -1,0 +1,44 @@
+{
+  "include": ["src/", "remix.env.d.ts", "**/*.ts", "**/*/*.tsx"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "rootDir": "src",
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./src",
+    "paths": {
+      "~routes": ["routes"],
+      "~routes/*": ["routes/*"],
+
+      "~widgets": ["widgets"],
+      "~widgets/*": ["widgets/*"],
+
+      "~entities": ["entities"],
+      "~entities/*": ["entities/*"],
+
+      "~shared": ["shared"],
+      "~shared/*": ["shared/*"],
+
+      "~server": ["server"],
+      "~server/*": ["server/*"],
+
+      "~assets": ["assets"],
+      "~assets/*": ["assets/*"]
+    }
+  }
+}
